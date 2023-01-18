@@ -38,7 +38,7 @@ const contactsSlice = toolkit.createSlice({
       state.isLoading = false;
       state.error = null;
       const index = state.items.findIndex(
-        task => task.id === action.payload.id
+        contact => contact.id === action.payload.id
       );
       state.items.splice(index, 1);
     },
