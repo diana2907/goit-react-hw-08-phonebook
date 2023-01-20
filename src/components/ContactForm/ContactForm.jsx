@@ -1,4 +1,5 @@
 import css from 'components/ContactForm/ContactForm.module.css';
+import { toast } from 'react-hot-toast';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/operations';
 import { selectContacts } from 'redux/selectors';
@@ -18,7 +19,16 @@ export const ContactForm = () => {
         contact => contact.name.toLowerCase() === name.value.toLowerCase()
       )
     ) {
-      alert(`${name.value} is already in contacts`);
+      // toast(`${name.value} is already in contacts`);
+
+      toast(`${name.value} is already in contacts`, {
+        style: {
+          borderRadius: '10px',
+          background: '#8d8ddb',
+          color: 'rgb(255, 255, 255)',
+          boxShadow: '0px 0px 2px 2px rgb(86, 136, 194)',
+        },
+      });
     } else {
       dispatch(addContact({ name: name.value, number: number.value }));
     }
