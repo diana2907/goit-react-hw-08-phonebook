@@ -19,8 +19,6 @@ export const ContactForm = () => {
         contact => contact.name.toLowerCase() === name.value.toLowerCase()
       )
     ) {
-      // toast(`${name.value} is already in contacts`);
-
       toast(`${name.value} is already in contacts`, {
         style: {
           borderRadius: '10px',
