@@ -21,7 +21,6 @@ export default function ContactsPage() {
         <title>Your contacts</title>
       </Helmet>
       <ContactForm />
-      <h2>Contacts</h2>
       <Filter />
       {isLoading && <b>Request in progress...</b>}
       <ContactList />

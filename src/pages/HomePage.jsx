@@ -1,12 +1,5 @@
+import { Home } from 'components/Home/Home';
+
 export default function HomePage() {
-  return (
-    <div>
-      <h1>
-        Phonebook welcome page
-        <span role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </span>
-      </h1>
-    </div>
-  );
+  return <Home />;
 }

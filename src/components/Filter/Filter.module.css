@@ -1,4 +1,6 @@
 .box {
+    display: grid;
+    place-items: center;
     margin-bottom: 20px;
 }
 

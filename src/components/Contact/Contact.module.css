@@ -5,7 +5,7 @@
 }
 .btn {
     width: 80px;
-    margin: 0 auto;
+    /* margin: 0 auto;
     margin-right: 0;
     margin-left: 0;
     background-color:#8d8ddb;
@@ -14,11 +14,11 @@
     box-shadow: 0px 0px 2px 2px rgb(86, 136, 194);
     font-weight: 700;
     padding: 5px;
-    transition: all .3s ease-in-out; 
+    transition: all .3s ease-in-out;  */
 }
-.btn:hover {
+/* .btn:hover {
     transform: scale(1.2);
-}
+} */
 
 
 

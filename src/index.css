@@ -38,6 +38,21 @@ img {
 
 button {
   cursor: pointer;
+  width: 70px;
+  margin: 0 auto;
+  margin-right: 0;
+  margin-left: 0;
+  background-color:#8d8ddb;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(86, 136, 194);
+  font-weight: 600;
+  padding: 5px;
+  transition: all .3s ease-in-out; 
+}
+
+button:hover {
+  transform: scale(1.2);
 }
 
 a {
@@ -46,6 +61,16 @@ a {
 
 #root {
   height: 100%;
+  background-color: azure;
+  color: #080858;
+   padding: 20px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+
+  
 }
 
 
@@ -61,3 +86,16 @@ a {
   color: #080858;
 
 }
+
+input {
+  border-radius: 5px;
+  padding: 7px;
+  border: 2px solid #080858;
+}
+
+label{
+
+  display: grid;
+  margin-bottom: 25px;
+  font-weight: 700;
+  }

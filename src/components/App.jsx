@@ -13,29 +13,12 @@ const LoginPage = lazy(() => import('../pages/LoginPage'));
 const ContactsPage = lazy(() => import('../pages/ContactsPage'));
 
 export function App() {
-  // const isLoading = useSelector(selectIsLoading);
-  // const error = useSelector(selectError);
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
 
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);
-
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
-
-  // return (
-  //   <div className="container">
-  //     <h1>Phonebook</h1>
-  //     <ContactForm />
-  //     <h2>Contacts</h2>
-  //     <Filter />
-  //     {isLoading && !error && <b>Request in progress...</b>}
-  //     <ContactList />
-  //   </div>
-  // );
 
   return isRefreshing ? (
     <b>Refreshing user...</b>

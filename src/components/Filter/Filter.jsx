@@ -11,6 +11,7 @@ export const Filter = () => {
 
   return (
     <div className={css.box}>
+      <h2>Contacts</h2>
       <p className={css.text}>Find contact by name</p>
       <input className={css.input} type="text" onChange={handleFilterChange} />
     </div>
